@@ -1,14 +1,13 @@
-# from tests.conftest import capture_screenshot
+from conftest import capture_screenshot
 import pytest
 import time
 
-# @capture_screenshot
+@capture_screenshot
 def test_laptop_search(app):
 
     current_time = time.strftime("%d/%m/%Y %H:%M:%S")
     app.session.open_homepage()
     assert "Торговый портал Shop.by – Все интернет-магазины Минска и Беларуси" in app.driver.title
-    time.sleep(5)
     app.homepage.expand_main_menu()
     app.homepage.expand_computers_menu()
     app.homepage.expand_laptops_menu()

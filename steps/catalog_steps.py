@@ -26,7 +26,8 @@ class CatalogActions:
 
     def select_model(self, value):
         LOGGER.info("Expand model list")
-        self.driver.execute_script("document.querySelector('span[data-idgroup="'prof_1000'"]').click();")
+        # self.driver.execute_script("document.querySelector('span[data-idgroup="'prof_1000'"]').click();")
+        self.catalog_actions.model_list_expand.click()
         wait(lambda: self.catalog_actions.is_element_present("laptops_block_extended"), timeout_seconds=20.0)
         LOGGER.info("Check corresponding model checkboxes")
         model_list = self.catalog_actions.model_list_checkboxes
