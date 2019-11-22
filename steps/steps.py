@@ -1,34 +1,4 @@
-from selenium.webdriver import ActionChains
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from pages.homepage import Homepage
-from pages.laptop import LaptopSearch
-from pages.results import ResultsComparison
 
-
-class Steps:
-
-    def __init__(self, app):
-        self.app = app
-
-
-
-# Results page
-# -----------------------
-    def count_items(self):
-        items_number = self.app.driver.find_element_by_xpath(ResultsComparison.FOUND_ITEMS)
-        print('\n' + 'Search results: ' + items_number.text +' items')
-
-    def sort_cheap_first(self):
-        self.app.driver.find_element_by_xpath(ResultsComparison.SORT_OPTIONS_MENU).click()
-
-        wait = WebDriverWait(self.app.driver, 10)
-        wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, ResultsComparison.SORT_OPTIONS_BLOCK)))
-        self.app.driver.find_element_by_xpath(ResultsComparison.SORT_BY_CHEAPEST).click()
-
-        wait = WebDriverWait(self.app.driver, 10)
-        wait.until(EC.visibility_of_element_located((By.XPATH, ResultsComparison.BY_CHEAPEST_LABEL)))
 
     def cheapest_laptop_first(self):
         laptopList1 = self.app.driver.find_elements_by_xpath(ResultsComparison.LIST_LAPTOPS_CHEAPEST)

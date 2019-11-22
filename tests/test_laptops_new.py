@@ -18,5 +18,10 @@ def test_laptop_search(app):
     app.searching.set_price(price_from='700', price_to='2500')
     app.searching.select_model(value=['Dell', 'Lenovo', 'HP'])
     app.searching.select_diagonal(lowest_value='12.0', highest_value='13.4')
+    time.sleep(10)
     app.searching.show_results()
     assert "Ноутбук купить в Минске, цены на ноутбуки и нетбуки в интернет-магазинах – Shop.by" in app.driver.title
+
+    app.results.count_items()
+    app.results.sort_cheap_first()
+    app.results.cheapest_laptop_first()
