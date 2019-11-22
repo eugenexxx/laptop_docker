@@ -3,6 +3,7 @@ from selenium.common.exceptions import WebDriverException
 from fixture.session import SessionHelper
 from steps.homepage_steps import HomepageActions
 from steps.catalog_steps import CatalogActions
+from steps.results_steps import ResultsPageActions
 import webium.settings
 from selenium import webdriver
 from selenium.common.exceptions import WebDriverException
@@ -43,6 +44,7 @@ class Application:
         self.session = SessionHelper(self)
         self.homepage = HomepageActions(self)
         self.searching = CatalogActions(self)
+        self.results = ResultsPageActions(self)
         self.base_url = "https://www.shop.by/"
 
     def open_home_page(self):
