@@ -1,5 +1,3 @@
-from selenium import webdriver
-from selenium.common.exceptions import WebDriverException
 from fixture.session import SessionHelper
 from steps.homepage_steps import HomepageActions
 from steps.catalog_steps import CatalogActions

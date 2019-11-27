@@ -4,9 +4,7 @@
     <list default="true" id="23438663-bb48-419c-9389-853b8710400d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fixture/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/application.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/results.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/results.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/steps/steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/steps/steps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_laptops_new.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_laptops_new.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_laptops.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_laptops.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +67,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in test_laptops_new.py">
+  <component name="RunManager" selected="Python tests.pytest in test_laptops.py">
     <configuration name="pytest for test_cv.test_cv" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="6_6_laptops_experiment" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -100,7 +98,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest in test_cv.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest in /home/user/6_6_laptop-master/tests/test_cv.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="6_6_laptops_experiment" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -115,7 +113,7 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest in test_laptops_new.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest in test_laptops.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="6_6_laptops_experiment" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -126,7 +124,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_laptops_new.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_laptops.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
@@ -147,10 +145,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest in test_laptops_new.py" />
+        <item itemvalue="Python tests.pytest in test_laptops.py" />
         <item itemvalue="Python tests.pytest for test_laptops.test_laptops" />
         <item itemvalue="Python tests.pytest in test_laptops.py" />
-        <item itemvalue="Python tests.pytest in test_cv.py" />
+        <item itemvalue="Python tests.pytest in /home/user/6_6_laptop-master/tests/test_cv.py" />
         <item itemvalue="Python tests.pytest for test_cv.test_cv" />
       </list>
     </recent_temporary>
@@ -180,7 +178,35 @@
       <option name="project" value="LOCAL" />
       <updated>1574424652467</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add steps &quot;results&quot;">
+      <created>1574437167455</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1574437167455</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add final steps">
+      <created>1574853632755</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1574853632755</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add final steps">
+      <created>1574853654230</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1574853654230</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Some corrections">
+      <created>1574856826341</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1574856826341</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -188,7 +214,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -197,6 +225,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="remove unnecessary" />
     <MESSAGE value="Correct locators" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correct locators" />
+    <MESSAGE value="Add steps &quot;results&quot;" />
+    <MESSAGE value="Add final steps" />
+    <MESSAGE value="Some corrections" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some corrections" />
   </component>
 </project>
