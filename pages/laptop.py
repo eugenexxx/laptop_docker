@@ -13,3 +13,4 @@ class LaptopSearchPage(BasePage):
     diagonal_block_extended = Find(by=By.CSS_SELECTOR, value='#Attr_prof_5828')
     laptops_block_extended = Find(by=By.CSS_SELECTOR, value='#Attr_prof_1000')
     model_list_expand = Find(by=By.CSS_SELECTOR, value="span[data-idgroup='prof_1000']")
+    close_button = Find(by=By.XPATH, value="//a[@data-ga='sbros']")

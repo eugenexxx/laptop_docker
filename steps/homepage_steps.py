@@ -2,6 +2,7 @@ from pages.homepage import Homepage
 from selenium.webdriver.common.action_chains import ActionChains
 from waiting import wait, TimeoutExpired
 import logging
+import allure
 
 LOGGER = logging.getLogger(__name__)
 
@@ -12,6 +13,7 @@ class HomepageActions:
         self.driver = app.driver
         self.hp_actions = Homepage(driver=self.driver)
 
+    @allure.step('Expand main menu')
     def expand_main_menu(self):
         LOGGER.info("Expand main menu")
         driver = self.app.driver
@@ -21,6 +23,7 @@ class HomepageActions:
         actions.move_to_element(menu_hover).perform()
         wait(lambda: self.hp_actions.is_element_present("computers_label"), timeout_seconds=20.0)
 
+    @allure.step('Expand 2nd level menu')
     def expand_computers_menu(self):
         LOGGER.info("Expand computers menu")
         driver = self.app.driver
@@ -30,6 +33,7 @@ class HomepageActions:
         actions.move_to_element(menu_hover).perform()
         wait(lambda: self.hp_actions.is_element_present("laptops_accessories_label"), timeout_seconds=20.0)
 
+    @allure.step('Expand 3rd level menu')
     def expand_laptops_menu(self):
         LOGGER.info("Expand computers menu")
         driver = self.app.driver
@@ -39,6 +43,7 @@ class HomepageActions:
         actions.move_to_element(menu_hover).perform()
         wait(lambda: self.hp_actions.is_element_present("laptops_label"), timeout_seconds=20.0)
 
+    @allure.step('Click laptops label')
     def click_laptops(self):
         LOGGER.info("Click 'Ноутбуки' menu item")
         driver = self.app.driver
