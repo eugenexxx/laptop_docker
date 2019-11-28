@@ -1,6 +1,6 @@
-pytest==5.2.1
+pytest==5.3.1
 selenium==3.141.0
 webium==1.2.1
-pluggy==0.13.0
+pluggy==0.13.1
 allure-pytest==2.8.6
 allure-python-commons==2.8.6
